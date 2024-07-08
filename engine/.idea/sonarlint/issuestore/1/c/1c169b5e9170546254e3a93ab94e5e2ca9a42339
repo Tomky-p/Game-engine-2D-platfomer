@@ -1,0 +1,10 @@
+
+g	java:S112j"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8›²Œ‘ù1
+j
+java:S2095c"MUse try-with-resources or close this "ExecutorService" in a "finally" clause.(¸‘æÃ8ò±‘ù1
+t
+java:S3776X"RRefactor this method to reduce its Cognitive Complexity from 32 to the 15 allowed.(¦•œ¡şÿÿÿÿ8·²Œ‘ù1
+{
+java:S2142i"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€8¹²Œ‘ù1
+u
+java:S3776Ş"RRefactor this method to reduce its Cognitive Complexity from 36 to the 15 allowed.(¿ÎÚøıÿÿÿÿ8Ë²Œ‘ù1

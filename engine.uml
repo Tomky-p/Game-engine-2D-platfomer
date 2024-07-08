@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>/home/tomky/pjv/git/tomekpe1/engine/src</OriginalElement>
+  <nodes>
+    <node x="254.0" y="3589.0">org.tomek.engine.controls.Level</node>
+    <node x="997.0" y="4666.5">org.tomek.engine.Launcher</node>
+    <node x="1055.5" y="1245.5">org.tomek.engine.models.Inventory</node>
+    <node x="2092.5" y="471.5">org.tomek.engine.exceptions.TextureLoadingException</node>
+    <node x="156.5" y="1474.5">org.tomek.engine.gameobjects.GameObject</node>
+    <node x="1902.0" y="211.5">org.tomek.engine.exceptions.JsonLoadingException</node>
+    <node x="1170.0" y="2911.5">org.tomek.engine.exceptions.LoadLevelException</node>
+    <node x="1475.0" y="3448.5">org.tomek.engine.controls.InventoryControl</node>
+    <node x="2006.0" y="4054.5">org.tomek.engine.gameobjects.NPCTest</node>
+    <node x="890.0" y="2108.5">org.tomek.engine.gameobjects.NPC</node>
+    <node x="418.5" y="921.5">org.tomek.engine.models.Coords</node>
+    <node x="937.0" y="3908.5">org.tomek.engine.controls.Game</node>
+    <node x="638.5" y="2911.5">org.tomek.engine.exceptions.SaveProgressException</node>
+    <node x="1844.0" y="1304.5">org.tomek.engine.controls.HealthBar</node>
+    <node x="-123.5" y="2788.5">org.tomek.engine.gameobjects.Collectible</node>
+    <node x="388.5" y="3448.5">org.tomek.engine.views.DeathScreen</node>
+    <node x="1002.5" y="4434.5">org.tomek.engine.controls.Menu</node>
+    <node x="70.0" y="-13.5">org.tomek.engine.enums.Type</node>
+    <node x="832.0" y="3472.5">org.tomek.engine.views.PauseMenu</node>
+    <node x="1520.0" y="2680.5">org.tomek.engine.gameobjects.Player</node>
+    <node x="1690.5" y="4054.5">org.tomek.engine.controls.InventoryControlTest</node>
+    <node x="2164.5" y="1438.5">org.tomek.engine.FileManager</node>
+    <node x="1082.5" y="3351.5">org.tomek.engine.exceptions.FxmlLoadingException</node>
+    <node x="236.5" y="2824.5">org.tomek.engine.gameobjects.Obstacle</node>
+    <node x="1726.0" y="471.5">org.tomek.engine.exceptions.JsonSavingException</node>
+    <node x="-109.0" y="3546.5">org.tomek.engine.enums.GameState</node>
+    <node x="1510.0" y="789.5">org.tomek.engine.models.Quest</node>
+    <node x="1590.0" y="186.5">org.tomek.engine.enums.QuestState</node>
+    <node x="476.5" y="2240.5">org.tomek.engine.gameobjects.Hazard</node>
+    <node x="24.5" y="325.5">org.tomek.engine.models.Item</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.tomek.engine.gameobjects.NPCTest" target="org.tomek.engine.controls.InventoryControl" relationship="CREATE">
+      <point x="0.0" y="-68.5" />
+      <point x="2139.0" y="3803.0" />
+      <point x="1739.0" y="3803.0" />
+      <point x="1739.0" y="3783.0" />
+      <point x="1751.0" y="3783.0" />
+      <point x="92.0" y="154.5" />
+    </edge>
+    <edge source="org.tomek.engine.controls.InventoryControlTest" target="org.tomek.engine.controls.InventoryControl" relationship="TO_ONE">
+      <point x="54.25" y="-68.5" />
+      <point x="1853.25" y="4023.0" />
+      <point x="1859.0" y="4023.0" />
+      <point x="1859.0" y="4003.0" />
+      <point x="1559.0" y="4003.0" />
+      <point x="1559.0" y="3783.0" />
+      <point x="1567.0" y="3783.0" />
+      <point x="-92.0" y="154.5" />
+    </edge>
+    <edge source="org.tomek.engine.controls.Level" target="org.tomek.engine.gameobjects.Hazard" relationship="TO_MANY">
+      <point x="-22.5" y="-14.0" />
+      <point x="276.5" y="3563.0" />
+      <point x="279.0" y="3563.0" />
+      <point x="279.0" y="3083.0" />
+      <point x="619.0" y="3083.0" />
+      <point x="0.0" y="142.5" />
+    </edge>
+    <edge source="org.tomek.engine.controls.Game" target="org.tomek.engine.gameobjects.Collectible" relationship="TO_ONE">
+      <point x="-61.0" y="-214.5" />
+      <point x="998.0" y="3883.0" />
+      <point x="919.0" y="3883.0" />
+      <point x="919.0" y="3803.0" />
+      <point x="139.0" y="3803.0" />
+      <point x="139.0" y="3123.0" />
+      <point x="19.0" y="3123.0" />
+      <point x="0.0" y="154.5" />
+    </edge>
+    <edge source="org.tomek.engine.controls.Level" target="org.tomek.engine.gameobjects.Obstacle" relationship="TO_MANY">
+      <point x="-22.5" y="-14.0" />
+      <point x="276.5" y="3563.0" />
+      <point x="279.0" y="3563.0" />
+      <point x="279.0" y="3083.0" />
+      <point x="379.0" y="3083.0" />
+      <point x="0.0" y="118.5" />
+    </edge>
+    <edge source="org.tomek.engine.controls.Game" target="org.tomek.engine.controls.InventoryControl" relationship="CREATE">
+      <point x="61.0" y="-214.5" />
+      <point x="1120.0" y="3883.0" />
+      <point x="1119.0" y="3883.0" />
+      <point x="1119.0" y="3863.0" />
+      <point x="1739.0" y="3863.0" />
+      <point x="1739.0" y="3783.0" />
+      <point x="1751.0" y="3783.0" />
+      <point x="92.0" y="154.5" />
+    </edge>
+    <edge source="org.tomek.engine.gameobjects.NPCTest" target="org.tomek.engine.models.Inventory" relationship="CREATE">
+      <point x="0.0" y="-68.5" />
+      <point x="2139.0" y="3623.0" />
+      <point x="2019.0" y="3623.0" />
+      <point x="2019.0" y="1903.0" />
+      <point x="1360.75" y="1903.0" />
+      <point x="101.75" y="297.5" />
+    </edge>
+    <edge source="org.tomek.engine.controls.Game" target="org.tomek.engine.exceptions.FxmlLoadingException" relationship="CREATE">
+      <point x="61.0" y="-214.5" />
+      <point x="1120.0" y="3883.0" />
+      <point x="1119.0" y="3883.0" />
+      <point x="1119.0" y="3783.0" />
+      <point x="1239.0" y="3783.0" />
+      <point x="0.0" y="31.5" />
+    </edge>
+    <edge source="org.tomek.engine.Launcher" target="org.tomek.engine.controls.Menu" relationship="CREATE">
+      <point x="0.0" y="-56.5" />
+      <point x="0.0" y="68.5" />
+    </edge>
+    <edge source="org.tomek.engine.FileManager" target="org.tomek.engine.exceptions.JsonSavingException" relationship="CREATE">
+      <point x="0.0" y="-104.5" />
+      <point x="2299.0" y="1403.0" />
+      <point x="2219.0" y="1403.0" />
+      <point x="2219.0" y="563.0" />
+      <point x="1879.0" y="563.0" />
+      <point x="0.0" y="31.5" />
+    </edge>
+    <edge source="org.tomek.engine.controls.Game" target="org.tomek.engine.views.PauseMenu" relationship="TO_ONE">
+      <point x="-61.0" y="-214.5" />
+      <point x="998.0" y="3883.0" />
+      <point x="919.0" y="3883.0" />
+      <point x="919.0" y="3803.0" />
+      <point x="925.5" y="3803.0" />
+      <point x="-93.5" y="130.5" />
+    </edge>
+    <edge source="org.tomek.engine.gameobjects.NPCTest" target="org.tomek.engine.models.Coords" relationship="CREATE">
+      <point x="0.0" y="-68.5" />
+      <point x="2139.0" y="3623.0" />
+      <point x="1979.0" y="3623.0" />
+      <point x="1979.0" y="1943.0" />
+      <point x="569.25" y="1943.0" />
+      <point x="50.25" y="81.5" />
+    </edge>
+    <edge source="org.tomek.engine.controls.Level" target="org.tomek.engine.models.Item" relationship="TO_MANY">
+      <point x="-22.5" y="-14.0" />
+      <point x="276.5" y="3563.0" />
+      <point x="279.0" y="3563.0" />
+      <point x="279.0" y="3083.0" />
+      <point x="179.0" y="3083.0" />
+      <point x="179.0" y="2043.0" />
+      <point x="139.0" y="2043.0" />
+      <point x="139.0" y="903.0" />
+      <point x="99.0" y="903.0" />
+      <point x="99.0" y="703.0" />
+      <point x="91.75" y="703.0" />
+      <point x="-67.25" y="177.5" />
+    </edge>
+    <edge source="org.tomek.engine.controls.Game" target="org.tomek.engine.exceptions.SaveProgressException" relationship="CREATE">
+      <point x="61.0" y="-214.5" />
+      <point x="1120.0" y="3883.0" />
+      <point x="1119.0" y="3883.0" />
+      <point x="1119.0" y="3783.0" />
+      <point x="799.0" y="3783.0" />
+      <point x="799.0" y="3043.0" />
+      <point x="759.0" y="3043.0" />
+      <point x="759.0" y="3003.0" />
+      <point x="799.0" y="3003.0" />
+      <point x="0.0" y="31.5" />
+    </edge>
+    <edge source="org.tomek.engine.controls.InventoryControlTest" target="org.tomek.engine.controls.InventoryControl" relationship="CREATE">
+      <point x="-54.25" y="-68.5" />
+      <point x="1744.75" y="4023.0" />
+      <point x="1739.0" y="4023.0" />
+      <point x="1739.0" y="3783.0" />
+      <point x="1751.0" y="3783.0" />
+      <point x="92.0" y="154.5" />
+    </edge>
+    <edge source="org.tomek.engine.gameobjects.NPC" target="org.tomek.engine.models.Coords" relationship="TO_ONE">
+      <point x="84.5" y="-274.5" />
+      <point x="1143.5" y="2083.0" />
+      <point x="1139.0" y="2083.0" />
+      <point x="1139.0" y="2003.0" />
+      <point x="459.0" y="2003.0" />
+      <point x="459.0" y="1123.0" />
+      <point x="468.75" y="1123.0" />
+      <point x="-50.25" y="81.5" />
+    </edge>
+    <edge source="org.tomek.engine.controls.Level" target="org.tomek.engine.gameobjects.Player" relationship="TO_ONE">
+      <point x="-22.5" y="-14.0" />
+      <point x="276.5" y="3563.0" />
+      <point x="279.0" y="3563.0" />
+      <point x="279.0" y="3263.0" />
+      <point x="1619.0" y="3263.0" />
+      <point x="1619.0" y="3243.0" />
+      <point x="1619.5" y="3243.0" />
+      <point x="-99.5" y="262.5" />
+    </edge>
+    <edge source="org.tomek.engine.controls.Menu" target="org.tomek.engine.controls.Game" relationship="CREATE">
+      <point x="-38.25" y="-68.5" />
+      <point x="1040.75" y="4403.0" />
+      <point x="1039.0" y="4403.0" />
+      <point x="1039.0" y="4363.0" />
+      <point x="998.0" y="4363.0" />
+      <point x="-61.0" y="214.5" />
+    </edge>
+    <edge source="org.tomek.engine.controls.Game" target="org.tomek.engine.controls.Menu" relationship="CREATE">
+      <point x="61.0" y="214.5" />
+      <point x="1120.0" y="4403.0" />
+      <point x="1117.25" y="4403.0" />
+      <point x="38.25" y="-68.5" />
+    </edge>
+    <edge source="org.tomek.engine.gameobjects.Player" target="org.tomek.engine.gameobjects.GameObject" relationship="REALIZATION">
+      <point x="-99.5" y="-262.5" />
+      <point x="1619.5" y="2063.0" />
+      <point x="379.0" y="2063.0" />
+      <point x="379.0" y="1643.0" />
+      <point x="370.25" y="1643.0" />
+      <point x="71.25" y="68.5" />
+    </edge>
+    <edge source="org.tomek.engine.controls.InventoryControlTest" target="org.tomek.engine.models.Inventory" relationship="TO_ONE">
+      <point x="54.25" y="-68.5" />
+      <point x="1853.25" y="4023.0" />
+      <point x="1859.0" y="4023.0" />
+      <point x="1859.0" y="3223.0" />
+      <point x="1939.0" y="3223.0" />
+      <point x="1939.0" y="1883.0" />
+      <point x="1499.0" y="1883.0" />
+      <point x="1499.0" y="1863.0" />
+      <point x="1157.25" y="1863.0" />
+      <point x="-101.75" y="297.5" />
+    </edge>
+    <edge source="org.tomek.engine.controls.Game" target="org.tomek.engine.views.DeathScreen" relationship="TO_ONE">
+      <point x="-61.0" y="-214.5" />
+      <point x="998.0" y="3883.0" />
+      <point x="919.0" y="3883.0" />
+      <point x="919.0" y="3803.0" />
+      <point x="483.75" y="3803.0" />
+      <point x="-95.25" y="154.5" />
+    </edge>
+    <edge source="org.tomek.engine.controls.Game" target="org.tomek.engine.controls.Level" relationship="TO_ONE">
+      <point x="-61.0" y="-214.5" />
+      <point x="998.0" y="3883.0" />
+      <point x="919.0" y="3883.0" />
+      <point x="919.0" y="3803.0" />
+      <point x="299.0" y="3803.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="org.tomek.engine.gameobjects.NPCTest" target="org.tomek.engine.gameobjects.NPC" relationship="CREATE">
+      <point x="0.0" y="-68.5" />
+      <point x="2139.0" y="3623.0" />
+      <point x="1899.0" y="3623.0" />
+      <point x="1899.0" y="3323.0" />
+      <point x="1143.5" y="3323.0" />
+      <point x="84.5" y="274.5" />
+    </edge>
+    <edge source="org.tomek.engine.gameobjects.Collectible" target="org.tomek.engine.models.Coords" relationship="TO_ONE">
+      <point x="71.25" y="-154.5" />
+      <point x="90.25" y="2763.0" />
+      <point x="99.0" y="2763.0" />
+      <point x="99.0" y="2023.0" />
+      <point x="459.0" y="2023.0" />
+      <point x="459.0" y="1123.0" />
+      <point x="468.75" y="1123.0" />
+      <point x="-50.25" y="81.5" />
+    </edge>
+    <edge source="org.tomek.engine.controls.Game" target="org.tomek.engine.enums.GameState" relationship="TO_ONE">
+      <point x="-61.0" y="-214.5" />
+      <point x="998.0" y="3883.0" />
+      <point x="919.0" y="3883.0" />
+      <point x="919.0" y="3803.0" />
+      <point x="-1.0" y="3803.0" />
+      <point x="0.0" y="56.5" />
+    </edge>
+    <edge source="org.tomek.engine.models.Quest" target="org.tomek.engine.models.Item" relationship="TO_ONE">
+      <point x="0.0" y="-213.5" />
+      <point x="1719.0" y="763.0" />
+      <point x="1699.0" y="763.0" />
+      <point x="1699.0" y="743.0" />
+      <point x="99.0" y="743.0" />
+      <point x="99.0" y="703.0" />
+      <point x="91.75" y="703.0" />
+      <point x="-67.25" y="177.5" />
+    </edge>
+    <edge source="org.tomek.engine.controls.Game" target="org.tomek.engine.controls.InventoryControl" relationship="TO_ONE">
+      <point x="-61.0" y="-214.5" />
+      <point x="998.0" y="3883.0" />
+      <point x="919.0" y="3883.0" />
+      <point x="919.0" y="3823.0" />
+      <point x="1559.0" y="3823.0" />
+      <point x="1559.0" y="3783.0" />
+      <point x="1567.0" y="3783.0" />
+      <point x="-92.0" y="154.5" />
+    </edge>
+    <edge source="org.tomek.engine.gameobjects.Hazard" target="org.tomek.engine.gameobjects.GameObject" relationship="REALIZATION">
+      <point x="-71.25" y="-142.5" />
+      <point x="547.75" y="2063.0" />
+      <point x="379.0" y="2063.0" />
+      <point x="379.0" y="1643.0" />
+      <point x="370.25" y="1643.0" />
+      <point x="71.25" y="68.5" />
+    </edge>
+    <edge source="org.tomek.engine.FileManager" target="org.tomek.engine.exceptions.TextureLoadingException" relationship="CREATE">
+      <point x="0.0" y="-104.5" />
+      <point x="2299.0" y="1403.0" />
+      <point x="2219.0" y="1403.0" />
+      <point x="2219.0" y="563.0" />
+      <point x="2259.0" y="563.0" />
+      <point x="0.0" y="31.5" />
+    </edge>
+    <edge source="org.tomek.engine.controls.Level" target="org.tomek.engine.exceptions.SaveProgressException" relationship="CREATE">
+      <point x="22.5" y="-14.0" />
+      <point x="321.5" y="3423.0" />
+      <point x="759.0" y="3423.0" />
+      <point x="759.0" y="3003.0" />
+      <point x="799.0" y="3003.0" />
+      <point x="0.0" y="31.5" />
+    </edge>
+    <edge source="org.tomek.engine.FileManager" target="org.tomek.engine.exceptions.JsonLoadingException" relationship="CREATE">
+      <point x="0.0" y="-104.5" />
+      <point x="2299.0" y="1403.0" />
+      <point x="2219.0" y="1403.0" />
+      <point x="2219.0" y="563.0" />
+      <point x="2059.0" y="563.0" />
+      <point x="0.0" y="31.5" />
+    </edge>
+    <edge source="org.tomek.engine.gameobjects.Obstacle" target="org.tomek.engine.gameobjects.GameObject" relationship="REALIZATION">
+      <point x="-71.25" y="-118.5" />
+      <point x="307.75" y="2063.0" />
+      <point x="379.0" y="2063.0" />
+      <point x="379.0" y="1643.0" />
+      <point x="370.25" y="1643.0" />
+      <point x="71.25" y="68.5" />
+    </edge>
+    <edge source="org.tomek.engine.controls.InventoryControl" target="org.tomek.engine.gameobjects.Player" relationship="TO_ONE">
+      <point x="0.0" y="-154.5" />
+      <point x="1659.0" y="3283.0" />
+      <point x="1619.0" y="3283.0" />
+      <point x="1619.0" y="3243.0" />
+      <point x="1619.5" y="3243.0" />
+      <point x="-99.5" y="262.5" />
+    </edge>
+    <edge source="org.tomek.engine.controls.Game" target="org.tomek.engine.views.PauseMenu" relationship="CREATE">
+      <point x="61.0" y="-214.5" />
+      <point x="1120.0" y="3883.0" />
+      <point x="1119.0" y="3883.0" />
+      <point x="1119.0" y="3783.0" />
+      <point x="1112.5" y="3783.0" />
+      <point x="93.5" y="130.5" />
+    </edge>
+    <edge source="org.tomek.engine.gameobjects.NPCTest" target="org.tomek.engine.models.Quest" relationship="CREATE">
+      <point x="0.0" y="-68.5" />
+      <point x="2139.0" y="3623.0" />
+      <point x="2059.0" y="3623.0" />
+      <point x="2059.0" y="1823.0" />
+      <point x="1823.5" y="1823.0" />
+      <point x="104.5" y="213.5" />
+    </edge>
+    <edge source="org.tomek.engine.gameobjects.Player" target="org.tomek.engine.models.Inventory" relationship="TO_ONE">
+      <point x="99.5" y="-262.5" />
+      <point x="1818.5" y="2643.0" />
+      <point x="1819.0" y="2643.0" />
+      <point x="1819.0" y="1923.0" />
+      <point x="1499.0" y="1923.0" />
+      <point x="1499.0" y="1863.0" />
+      <point x="1157.25" y="1863.0" />
+      <point x="-101.75" y="297.5" />
+    </edge>
+    <edge source="org.tomek.engine.gameobjects.NPC" target="org.tomek.engine.gameobjects.GameObject" relationship="REALIZATION">
+      <point x="-84.5" y="-274.5" />
+      <point x="974.5" y="2063.0" />
+      <point x="379.0" y="2063.0" />
+      <point x="379.0" y="1643.0" />
+      <point x="370.25" y="1643.0" />
+      <point x="71.25" y="68.5" />
+    </edge>
+    <edge source="org.tomek.engine.controls.Game" target="org.tomek.engine.views.DeathScreen" relationship="CREATE">
+      <point x="61.0" y="-214.5" />
+      <point x="1120.0" y="3883.0" />
+      <point x="1119.0" y="3883.0" />
+      <point x="1119.0" y="3783.0" />
+      <point x="674.25" y="3783.0" />
+      <point x="95.25" y="154.5" />
+    </edge>
+    <edge source="org.tomek.engine.controls.Menu" target="org.tomek.engine.exceptions.LoadLevelException" relationship="CREATE">
+      <point x="-38.25" y="-68.5" />
+      <point x="1040.75" y="4403.0" />
+      <point x="1039.0" y="4403.0" />
+      <point x="1039.0" y="4363.0" />
+      <point x="1459.0" y="4363.0" />
+      <point x="1459.0" y="3583.0" />
+      <point x="1419.0" y="3583.0" />
+      <point x="1419.0" y="3003.0" />
+      <point x="1319.0" y="3003.0" />
+      <point x="0.0" y="31.5" />
+    </edge>
+    <edge source="org.tomek.engine.models.Inventory" target="org.tomek.engine.models.Item" relationship="TO_MANY">
+      <point x="0.0" y="-297.5" />
+      <point x="1259.0" y="903.0" />
+      <point x="99.0" y="903.0" />
+      <point x="99.0" y="703.0" />
+      <point x="91.75" y="703.0" />
+      <point x="-67.25" y="177.5" />
+    </edge>
+    <edge source="org.tomek.engine.gameobjects.NPCTest" target="org.tomek.engine.controls.HealthBar" relationship="CREATE">
+      <point x="0.0" y="-68.5" />
+      <point x="2139.0" y="3623.0" />
+      <point x="2099.0" y="3623.0" />
+      <point x="2099.0" y="1803.0" />
+      <point x="2046.5" y="1803.0" />
+      <point x="67.5" y="238.5" />
+    </edge>
+    <edge source="org.tomek.engine.gameobjects.Player" target="org.tomek.engine.models.Coords" relationship="TO_ONE">
+      <point x="99.5" y="-262.5" />
+      <point x="1818.5" y="2643.0" />
+      <point x="1819.0" y="2643.0" />
+      <point x="1819.0" y="1983.0" />
+      <point x="459.0" y="1983.0" />
+      <point x="459.0" y="1123.0" />
+      <point x="468.75" y="1123.0" />
+      <point x="-50.25" y="81.5" />
+    </edge>
+    <edge source="org.tomek.engine.gameobjects.Collectible" target="org.tomek.engine.gameobjects.GameObject" relationship="REALIZATION">
+      <point x="-71.25" y="-154.5" />
+      <point x="-52.25" y="2063.0" />
+      <point x="379.0" y="2063.0" />
+      <point x="379.0" y="1643.0" />
+      <point x="370.25" y="1643.0" />
+      <point x="71.25" y="68.5" />
+    </edge>
+    <edge source="org.tomek.engine.gameobjects.NPCTest" target="org.tomek.engine.gameobjects.Player" relationship="CREATE">
+      <point x="0.0" y="-68.5" />
+      <point x="2139.0" y="3623.0" />
+      <point x="1939.0" y="3623.0" />
+      <point x="1939.0" y="3303.0" />
+      <point x="1818.5" y="3303.0" />
+      <point x="99.5" y="262.5" />
+    </edge>
+    <edge source="org.tomek.engine.gameobjects.Player" target="org.tomek.engine.controls.HealthBar" relationship="TO_ONE">
+      <point x="99.5" y="-262.5" />
+      <point x="1818.5" y="2643.0" />
+      <point x="1819.0" y="2643.0" />
+      <point x="1819.0" y="2623.0" />
+      <point x="1911.5" y="2623.0" />
+      <point x="-67.5" y="238.5" />
+    </edge>
+    <edge source="org.tomek.engine.gameobjects.NPCTest" target="org.tomek.engine.models.Item" relationship="CREATE">
+      <point x="0.0" y="-68.5" />
+      <point x="2139.0" y="703.0" />
+      <point x="226.25" y="703.0" />
+      <point x="67.25" y="177.5" />
+    </edge>
+    <edge source="org.tomek.engine.controls.Game" target="org.tomek.engine.exceptions.LoadLevelException" relationship="CREATE">
+      <point x="61.0" y="-214.5" />
+      <point x="1120.0" y="3883.0" />
+      <point x="1119.0" y="3883.0" />
+      <point x="1119.0" y="3783.0" />
+      <point x="1419.0" y="3783.0" />
+      <point x="1419.0" y="3003.0" />
+      <point x="1319.0" y="3003.0" />
+      <point x="0.0" y="31.5" />
+    </edge>
+    <edge source="org.tomek.engine.controls.Level" target="org.tomek.engine.gameobjects.Collectible" relationship="TO_MANY">
+      <point x="-22.5" y="-14.0" />
+      <point x="276.5" y="3563.0" />
+      <point x="279.0" y="3563.0" />
+      <point x="279.0" y="3543.0" />
+      <point x="139.0" y="3543.0" />
+      <point x="139.0" y="3123.0" />
+      <point x="19.0" y="3123.0" />
+      <point x="0.0" y="154.5" />
+    </edge>
+    <edge source="org.tomek.engine.controls.Game" target="org.tomek.engine.gameobjects.NPC" relationship="TO_ONE">
+      <point x="-61.0" y="-214.5" />
+      <point x="998.0" y="3883.0" />
+      <point x="919.0" y="3883.0" />
+      <point x="919.0" y="3803.0" />
+      <point x="359.0" y="3803.0" />
+      <point x="359.0" y="3403.0" />
+      <point x="659.0" y="3403.0" />
+      <point x="659.0" y="3023.0" />
+      <point x="974.5" y="3023.0" />
+      <point x="-84.5" y="274.5" />
+    </edge>
+    <edge source="org.tomek.engine.controls.Level" target="org.tomek.engine.gameobjects.NPC" relationship="TO_MANY">
+      <point x="-22.5" y="-14.0" />
+      <point x="276.5" y="3563.0" />
+      <point x="279.0" y="3563.0" />
+      <point x="279.0" y="3103.0" />
+      <point x="659.0" y="3103.0" />
+      <point x="659.0" y="3023.0" />
+      <point x="974.5" y="3023.0" />
+      <point x="-84.5" y="274.5" />
+    </edge>
+    <edge source="org.tomek.engine.models.Item" target="org.tomek.engine.enums.Type" relationship="TO_ONE">
+      <point x="0.0" y="-177.5" />
+      <point x="0.0" y="56.5" />
+    </edge>
+    <edge source="org.tomek.engine.controls.Level" target="org.tomek.engine.exceptions.LoadLevelException" relationship="CREATE">
+      <point x="22.5" y="-14.0" />
+      <point x="321.5" y="3423.0" />
+      <point x="759.0" y="3423.0" />
+      <point x="759.0" y="3283.0" />
+      <point x="1419.0" y="3283.0" />
+      <point x="1419.0" y="3003.0" />
+      <point x="1319.0" y="3003.0" />
+      <point x="0.0" y="31.5" />
+    </edge>
+    <edge source="org.tomek.engine.controls.InventoryControl" target="org.tomek.engine.models.Inventory" relationship="TO_ONE">
+      <point x="0.0" y="-154.5" />
+      <point x="1659.0" y="3423.0" />
+      <point x="1499.0" y="3423.0" />
+      <point x="1499.0" y="1863.0" />
+      <point x="1157.25" y="1863.0" />
+      <point x="-101.75" y="297.5" />
+    </edge>
+    <edge source="org.tomek.engine.models.Quest" target="org.tomek.engine.enums.QuestState" relationship="TO_ONE">
+      <point x="0.0" y="-213.5" />
+      <point x="1719.0" y="763.0" />
+      <point x="1699.0" y="763.0" />
+      <point x="0.0" y="56.5" />
+    </edge>
+    <edge source="org.tomek.engine.controls.Level" target="org.tomek.engine.gameobjects.GameObject" relationship="TO_ONE">
+      <point x="-22.5" y="-14.0" />
+      <point x="276.5" y="3563.0" />
+      <point x="279.0" y="3563.0" />
+      <point x="279.0" y="3083.0" />
+      <point x="219.0" y="3083.0" />
+      <point x="219.0" y="2043.0" />
+      <point x="227.75" y="2043.0" />
+      <point x="-71.25" y="68.5" />
+    </edge>
+    <edge source="org.tomek.engine.gameobjects.Collectible" target="org.tomek.engine.models.Item" relationship="TO_ONE">
+      <point x="71.25" y="-154.5" />
+      <point x="90.25" y="2763.0" />
+      <point x="99.0" y="2763.0" />
+      <point x="99.0" y="703.0" />
+      <point x="91.75" y="703.0" />
+      <point x="-67.25" y="177.5" />
+    </edge>
+    <edge source="org.tomek.engine.gameobjects.Hazard" target="org.tomek.engine.models.Coords" relationship="TO_ONE">
+      <point x="71.25" y="-142.5" />
+      <point x="690.25" y="2203.0" />
+      <point x="459.0" y="2203.0" />
+      <point x="459.0" y="1123.0" />
+      <point x="468.75" y="1123.0" />
+      <point x="-50.25" y="81.5" />
+    </edge>
+    <edge source="org.tomek.engine.gameobjects.NPC" target="org.tomek.engine.models.Quest" relationship="TO_MANY">
+      <point x="84.5" y="-274.5" />
+      <point x="1143.5" y="2083.0" />
+      <point x="1139.0" y="2083.0" />
+      <point x="1139.0" y="2043.0" />
+      <point x="1614.5" y="2043.0" />
+      <point x="-104.5" y="213.5" />
+    </edge>
+    <edge source="org.tomek.engine.gameobjects.Obstacle" target="org.tomek.engine.models.Coords" relationship="TO_ONE">
+      <point x="71.25" y="-118.5" />
+      <point x="450.25" y="2203.0" />
+      <point x="459.0" y="2203.0" />
+      <point x="459.0" y="1123.0" />
+      <point x="468.75" y="1123.0" />
+      <point x="-50.25" y="81.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Compact" zoom="0.34866364704507685" showDependencies="true" x="1608.424367127273" y="2159.19714909091" />
+  <SelectedNodes>
+    <node>org.tomek.engine.gameobjects.NPC</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

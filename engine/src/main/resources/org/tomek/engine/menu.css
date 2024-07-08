@@ -1,0 +1,16 @@
+.root {
+    -fx-font-family: "Arial";
+}
+.box{
+    -fx-background-size: cover;
+    -fx-background-position: bottom;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image:
+        url("background2.png");
+}
+Label {
+    -fx-font-size: 60px;
+    -fx-font-weight: bold;
+    -fx-padding: 0px 0px 20px 0px;
+    -fx-text-fill: black;
+}

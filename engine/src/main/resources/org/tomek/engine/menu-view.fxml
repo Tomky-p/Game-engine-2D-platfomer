@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+
+<VBox stylesheets="@menu.css" alignment="CENTER" styleClass="box" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.tomek.engine.controls.Menu">
+
+    <Label>The Last Man's Journey</Label>
+    <Button fx:id="startButton" text="Start Game" onAction="#startGame"/>
+    <Button fx:id="loadButton" text="Load Game" onAction="#loadGame"/>
+    <Button fx:id="closeButton" cancelButton="true" text="Quit" onAction="#quit"/>
+
+</VBox>
+
